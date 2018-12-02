@@ -10,8 +10,140 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
+  font: normal 100%/1.3rem sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.cards {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  display: block;
+}
+
+.card-img {
+  padding: .5rem 1.3rem 1.3rem;
+}
+
+.card-img img {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.card-body {
+  padding: 0 .5rem;
+}
+
+.card-body h2 {
+  font-weight: normal;
+  margin: .5rem 0 0;
+}
+
+.card-body p {
+  margin: 0 0 1.3rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .card-img {
+    display: inline-block;
+    width: 50px;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .card-body {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+    padding: 0 .5rem;
+  }
+
+  .card-body h2 {
+    margin-top: 1rem;
+  }
+
+  .card-body p {
+    margin-top: .5rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .cards {
+    margin: .5rem;
+  }
+
+  .card {
+    display: inline-block;
+    width: 30%;
+    margin: .25rem;
+  }
+
+  .card-img, .card-body {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .card-img img {
+    margin-top: .5rem;
+  }
+
+  .card-body h2 {
+    margin-top: 1rem;
+  }
+
+  .card-body p {
+    margin-top: .5rem;
+  }
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .cards {
+    margin: .25rem;
+  }
+
+  .card {
+    width: 31%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  .card-img, .card-body {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 10%;
+  }
+
 }
